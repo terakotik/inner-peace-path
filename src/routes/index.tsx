@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { User, FileCheck, CalendarHeart, Heart, Target, Compass, Send } from "lucide-react";
+import { User, FileCheck, CalendarHeart, Heart, Target, Send, Brain, Users } from "lucide-react";
 import heroImage from "@/assets/hero-sergey.png";
 
 export const Route = createFileRoute("/")({
@@ -52,47 +52,46 @@ function Index() {
           </a>
         </div>
 
-        <section id="about" className="mt-10">
-          <h2 className="text-xl font-semibold">Для кого этот сайт</h2>
-          <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-            Если вы узнаёте себя в описании ниже — мы говорим на одном языке.
-          </p>
-
-          <div className="mt-4 rounded-2xl bg-card border border-border p-5 shadow-[var(--shadow-soft)]">
-            <p className="text-sm leading-relaxed">
-              Женщина <span className="font-semibold">30–40 лет</span>, осознанно
-              приходит в терапию. Способна к самокритике, обладает достаточным
-              уровнем рациональности.
-            </p>
-            <ul className="mt-4 space-y-3 text-sm">
-              <li className="flex gap-3">
-                <Heart className="h-5 w-5 mt-0.5 text-primary shrink-0" />
-                <span>Тревожность и сложности в отношениях</span>
-              </li>
-              <li className="flex gap-3">
-                <Target className="h-5 w-5 mt-0.5 text-primary shrink-0" />
-                <span>Целеполагание, желание понять себя</span>
-              </li>
-              <li className="flex gap-3">
-                <Compass className="h-5 w-5 mt-0.5 text-primary shrink-0" />
-                <span>Обрести баланс и сбалансировать отношения</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section className="mt-10">
+        <section id="about" className="mt-8">
           <h2 className="text-xl font-semibold">Самые острые проблемы</h2>
-          <div className="mt-4 rounded-2xl border border-border bg-gradient-to-br from-card to-accent p-5 shadow-[var(--shadow-soft)]">
-            <div className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10">
-                <Heart className="h-5 w-5 text-primary" />
+          <div className="mt-4 space-y-3">
+            <div className="rounded-2xl border border-border bg-gradient-to-br from-card to-accent p-4 shadow-[var(--shadow-soft)]">
+              <div className="flex items-center gap-3">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 shrink-0">
+                  <Brain className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm">Тревожное расстройство</h3>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    Обрести внутреннюю опору и вернуть баланс
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 className="font-semibold">Тревожное расстройство</h3>
-                <p className="text-xs text-muted-foreground mt-0.5">
-                  Помогаю обрести внутреннюю опору и вернуть баланс
-                </p>
+            </div>
+            <div className="rounded-2xl border border-border bg-gradient-to-br from-card to-accent p-4 shadow-[var(--shadow-soft)]">
+              <div className="flex items-center gap-3">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 shrink-0">
+                  <Users className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm">Как построить отношения</h3>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    Сбалансировать близость и личные границы
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="rounded-2xl border border-border bg-gradient-to-br from-card to-accent p-4 shadow-[var(--shadow-soft)]">
+              <div className="flex items-center gap-3">
+                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/10 shrink-0">
+                  <Target className="h-5 w-5 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-sm">Невозможность двигаться к цели</h3>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    Понять себя и вернуть энергию к действию
+                  </p>
+                </div>
               </div>
             </div>
           </div>
