@@ -171,7 +171,7 @@ function Index() {
               </svg>
             </a>
             <a
-              href="https://t.me"
+              href="https://t.me/zver_sergey_krd"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Telegram"
