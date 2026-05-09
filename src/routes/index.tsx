@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { User, FileCheck, CalendarHeart, Target, Send, Brain, Users } from "lucide-react";
 import heroImage from "@/assets/hero-sergey.png";
 
@@ -29,20 +29,20 @@ function Index() {
         />
 
         <div className="mt-6 grid grid-cols-3 gap-3">
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="flex flex-col items-center gap-2 rounded-2xl bg-card px-2 py-4 text-center shadow-[var(--shadow-soft)] border border-border transition active:scale-95 hover:bg-accent"
           >
             <User className="h-6 w-6 text-primary" />
             <span className="text-xs font-medium">Обо мне</span>
-          </a>
-          <a
-            href="#checklist"
+          </Link>
+          <Link
+            to="/test"
             className="flex flex-col items-center gap-2 rounded-2xl bg-card px-2 py-4 text-center shadow-[var(--shadow-soft)] border border-border transition active:scale-95 hover:bg-accent"
           >
             <FileCheck className="h-6 w-6 text-primary" />
             <span className="text-xs font-medium">Чек-лист</span>
-          </a>
+          </Link>
           <a
             href="#consult"
             className="flex flex-col items-center gap-2 rounded-2xl bg-primary px-2 py-4 text-center text-primary-foreground shadow-[var(--shadow-soft)] transition active:scale-95"
