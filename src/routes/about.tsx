@@ -128,12 +128,14 @@ function About() {
           </ul>
         </Section>
 
-        <Link
-          to="/"
+        <a
+          href="https://t.me/zver_sergey_krd"
+          target="_blank"
+          rel="noopener noreferrer"
           className="block w-full rounded-full bg-primary py-3 text-center text-sm font-semibold text-primary-foreground shadow-[var(--shadow-soft)] active:scale-95 transition"
         >
           Записаться на консультацию
-        </Link>
+        </a>
       </main>
     </div>
   );
