@@ -159,12 +159,14 @@ function TestPage() {
             <p className="mt-3 text-base font-semibold">{result?.level}</p>
             <p className="mt-2 text-sm opacity-90">{result?.text}</p>
             <div className="mt-5 flex flex-col gap-2">
-              <Link
-                to="/"
+              <a
+                href="https://t.me/zver_sergey_krd"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-background py-3 text-sm font-semibold text-foreground active:scale-95 transition"
               >
                 Записаться на консультацию
-              </Link>
+              </a>
               <button
                 type="button"
                 onClick={() => {
