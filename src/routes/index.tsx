@@ -99,6 +99,41 @@ function Index() {
           </div>
         </section>
 
+        <section className="mt-10">
+          <h2 className="text-xl font-semibold">Бесплатные тесты</h2>
+          <p className="mt-1 text-xs text-muted-foreground">
+            Помогут лучше понять своё состояние
+          </p>
+          <div className="mt-4 grid grid-cols-1 gap-3">
+            <Link
+              to="/test"
+              className="flex items-center gap-4 rounded-2xl border border-border bg-gradient-to-br from-primary/10 to-accent p-4 shadow-[var(--shadow-soft)] active:scale-[0.99] transition"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/15 shrink-0">
+                <FileCheck className="h-6 w-6 text-primary" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-semibold text-sm">Тест на тревожность</h3>
+                <p className="text-xs text-muted-foreground mt-0.5">Шкала Бека · 21 вопрос</p>
+              </div>
+              <span className="text-primary text-lg">→</span>
+            </Link>
+            <Link
+              to="/depression"
+              className="flex items-center gap-4 rounded-2xl border border-border bg-gradient-to-br from-primary/10 to-accent p-4 shadow-[var(--shadow-soft)] active:scale-[0.99] transition"
+            >
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/15 shrink-0">
+                <Activity className="h-6 w-6 text-primary" />
+              </div>
+              <div className="flex-1">
+                <h3 className="font-semibold text-sm">Тест на депрессию</h3>
+                <p className="text-xs text-muted-foreground mt-0.5">Шкала Бека · 21 вопрос</p>
+              </div>
+              <span className="text-primary text-lg">→</span>
+            </Link>
+          </div>
+        </section>
+
         <section id="consult" className="mt-10">
           <div className="rounded-2xl bg-primary p-6 text-primary-foreground shadow-[var(--shadow-soft)] text-center">
             <h2 className="text-lg font-semibold">Безоценочное пространство</h2>
@@ -106,7 +141,9 @@ function Index() {
               для честного диалога и изменений
             </p>
             <a
-              href="#"
+              href="https://t.me/zver_sergey_krd"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-5 inline-flex items-center justify-center rounded-full bg-background px-6 py-3 text-sm font-semibold text-foreground transition active:scale-95"
             >
               Записаться на консультацию
