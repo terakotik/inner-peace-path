@@ -44,7 +44,9 @@ function Index() {
             <span className="text-xs font-medium">Чек-лист</span>
           </Link>
           <a
-            href="#consult"
+            href="https://t.me/zver_sergey_krd"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 rounded-2xl bg-primary px-2 py-4 text-center text-primary-foreground shadow-[var(--shadow-soft)] transition active:scale-95"
           >
             <CalendarHeart className="h-6 w-6" />
